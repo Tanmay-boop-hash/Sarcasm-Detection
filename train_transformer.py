@@ -11,6 +11,7 @@ def get_data(path="Sarcasm_Headlines_Dataset_v2.json"):
 train_df, test_df = get_data()
 
 # !pip install transformers datasets scikit-learn -q
+
 from transformers import DistilBertTokenizerFast, DistilBertForSequenceClassification, Trainer, TrainingArguments
 from datasets import Dataset
 import numpy as np
